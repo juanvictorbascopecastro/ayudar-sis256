@@ -43,25 +43,20 @@ function insertarLibro() {
         alert('Autor del libro es requerido!')
         return
     }
-    if( document.getElementById("archivo").files.length <= 0) {
+    if( document.getElementById("imagen").files.length <= 0) {
         alert('La imagen es requerida!')
         return 
     }
     var ajax = new XMLHttpRequest();
-    ajax.onreadystatechange = function(){
-        if(ajax.readyState == 4){
-            document.getElementById('resultado').innerHTML = ajax.responseText
+    const formDatos = new FormData(form);
+    ajax.open("POST", "php/insertar.php", false);
+    ajax.onreadystatechange = function()
+    {
+        if(ajax.readyState == 4 && ajax.status == 200)
+        {
+            document.getElementById("resultado").innerHTML = ajax.responseText;
         }
     }
-    ajax.open("POST", "php/insertar.php", false);
-    ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
-     
-    var formDatos = new FormData(form);
-    // formDatos.append('titulo', form.titulo.value)
-    // formDatos.append('autor', form.autor.value)
-    // formDatos.append('anio', form.anio.value)
-    // formDatos.append('imagen', document.getElementById("archivo").files[0])
-    console.log(formDatos)
     ajax.send(formDatos);
 }
 // pregunta 4
