@@ -73,6 +73,7 @@
     border: 2px solid var(--blue-border);
     background-color: var(--blue-contenido);
     min-height: 300px;
+    height: 100%;
 }
 .mensaje {
     clear: both;
@@ -94,4 +95,7 @@
 }
 .border{
     border-style: groove;
+}
+.lista-imagenes img{
+    height: 150px;
 }
