@@ -1,0 +1,18 @@
+* {
+    margin: 0 auto;
+}
+body{
+    padding: 20px;
+}
+.menu{
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(206, 206, 206);
+}
+.contenedor {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 4px;
+}
