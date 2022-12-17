@@ -9,10 +9,11 @@ function pregunta2(text) {
     document.getElementById('mensaje').style.setProperty('background-color', 'var(--gray-contenido)');
     setTitulo(text)
 }
+// colocamos el titulo
 function setTitulo(text) {
     document.getElementById('titulo').innerHTML = text
 }
-
+// cambiamos de pagina
 function cambiarPagina(pagina, titulo) {
     setTitulo(titulo)
     var ajax=new XMLHttpRequest();
@@ -31,7 +32,7 @@ function cambiarPagina(pagina, titulo) {
     ajax.send();
 }
 
-
+// insertar un libro 
 function insertarLibro() {
     const form = document.getElementById('form-libro')
     if(!form.titulo.value) {
@@ -63,6 +64,7 @@ function insertarLibro() {
     console.log(formDatos)
     ajax.send(formDatos);
 }
+// pregunta 4
 function listar() {
     fetch('php/listar.php')
     .then(response => response.text())
@@ -81,4 +83,31 @@ function listar() {
             document.getElementById("resultados-busqueda").innerHTML = 'No se encontro resultados';
         }
     });   
+}
+// pregunta 5
+function introducirN(){
+
+}
+
+function introducirN() {
+    const numero = document.getElementById('numero').value
+    fetch('paginas/introducir.php?numero='+numero)
+    .then(response => response.text())
+    .then(data => document.getElementById("contenido").innerHTML = data)
+    .catch(error => console.log(error));
+}
+
+function calcularSuma(){
+    let suma = 0;
+    const inputs = document.getElementsByTagName('input');
+    document.getElementById('mensaje').innerHTML = ''
+    document.getElementById('resultado').innerHTML = ''
+    for (var i = 0; i < inputs.length; i++) { 
+        if(!inputs[i].value) {
+            document.getElementById('mensaje').innerHTML = '<b class="error">Hay Campos Vacios!<b>';
+            return
+        }
+        suma += parseFloat(inputs[i].value)
+    }
+    document.getElementById('resultado').innerHTML = '<b>La suma es: ' + suma + '</b>'
 }

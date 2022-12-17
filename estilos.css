@@ -99,3 +99,6 @@
 .lista-imagenes img{
     height: 150px;
 }
+.error{
+    color: red;
+}
