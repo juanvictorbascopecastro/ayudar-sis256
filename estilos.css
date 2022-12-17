@@ -1,3 +1,14 @@
+:root {
+    --red-border: rgba(197, 0, 0, 0.683);
+    --red-contenido:  rgba(215, 135, 135, 0.683);
+    --blue-border: rgba(12, 66, 183, 0.683);
+    --blue-contenido: rgba(108, 112, 190, 0.683);
+    --naranja-border: rgba(229, 123, 9, 0.683);
+    --naranja-contenido: rgba(190, 152, 108, 0.683);
+    --gray-border: rgba(54, 54, 54, 0.683);
+    --gray-contenido: rgb(161, 161, 161);
+}
+  
 .contenedor {
     text-align: center;
     margin: 0 auto;
@@ -15,8 +26,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     color: #FFFFFF;
-    background-color: rgba(215, 135, 135, 0.683);
-    border: 2px solid rgba(197, 0, 0, 0.683);
+    background-color: var(--red-contenido);
+    border: 2px solid var(--red-border)
 }
 .lista {
     padding: 5px;
@@ -25,7 +36,7 @@
     text-align: center;
     height: 40px;
     margin: 0px 0px;
-    border: 2px solid rgba(204, 15, 15, 0.683);
+    border: 2px solid var(--blue-border)
 }
 .lista ul {
     text-decoration: none;
@@ -38,13 +49,13 @@
     margin-right: 8px;
 }
 .item1 {
-    background-color: rgba(221, 162, 95, 0.683);
-    border: 2px solid rgba(224, 108, 6, 0.683);
+    background-color:  var(--naranja-border);
+    border: 2px solid var(--naranja-contenido);
     margin-right: 8px;
 }
 .item2{
-    border: 2.5px solid rgba(12, 66, 183, 0.683);
-    background-color: rgba(108, 112, 190, 0.683);
+    border: 2px solid var(--blue-border);
+    background-color: var(--blue-contenido);
     margin-right: 8px;
 }
 .lista li a{
@@ -58,16 +69,16 @@
 .resultado {
     float: left; 
     width: 24%;
-    border: 2.5px solid rgba(12, 66, 183, 0.683);
-    background-color: rgba(108, 112, 190, 0.683);
+    border: 2px solid var(--blue-border);
+    background-color: var(--blue-contenido);
     min-height: 300px;
 }
 .mensaje {
     clear: both;
     margin-top: 10px;
     height: 40px;
-    background-color: rgba(215, 135, 135, 0.683);
-    border: 2px solid rgba(197, 0, 0, 0.683);
+    background-color: var(--red-contenido);
+    border: 2px solid var(--red-border);
     color: #FFFFFF;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 12px;
