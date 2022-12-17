@@ -1,3 +1,6 @@
+function pregunta1() {
+    var cont = document.getElementById("contenido").innerHTML = 'Pregunta 1'
+}
 function pregunta2(text) {
     document.getElementById('contenido').innerHTML = 'modo blanco y negro'
     document.getElementById('titulo').style.setProperty('background-color', 'var(--gray-contenido)');

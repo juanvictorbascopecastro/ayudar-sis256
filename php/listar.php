@@ -1,6 +1,6 @@
 <?php
 include('conexion.php'); 
-$sql = "SELECT * FROM libros LIMIT 2";
+$sql = "SELECT * FROM libros";
 $consulta = mysqli_query($con, $sql);
 $respuesta = array();
 while ($fila = mysqli_fetch_array($consulta)) {
