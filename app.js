@@ -88,9 +88,6 @@ function listar() {
     });   
 }
 // pregunta 5
-function introducirN(){
-
-}
 
 function introducirN() {
     const numero = document.getElementById('numero').value
