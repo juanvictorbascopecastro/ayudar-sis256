@@ -1,0 +1,84 @@
+.contenedor {
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #000;
+    width: 900px;
+}
+.menu{
+    text-align: center;
+    margin: 0 auto;
+}
+.titulo {
+    font-weight: bold;
+    text-align: center;
+    width: 900px;
+    height: 30px;
+    color: #FFFFFF;
+    background-color: rgba(215, 135, 135, 0.683);
+    border: 2px solid rgba(197, 0, 0, 0.683);
+}
+.lista {
+    padding: 5px;
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    height: 40px;
+    margin: 0px 0px;
+    border: 2px solid rgba(204, 15, 15, 0.683);
+}
+.lista ul {
+    text-decoration: none;
+    display:inline;
+    font-size: 12px;
+}
+.lista li {
+    padding: 10px;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+.item1 {
+    background-color: rgba(221, 162, 95, 0.683);
+    border: 2px solid rgba(224, 108, 6, 0.683);
+    margin-right: 8px;
+}
+.item2{
+    border: 2.5px solid rgba(12, 66, 183, 0.683);
+    background-color: rgba(108, 112, 190, 0.683);
+    margin-right: 8px;
+}
+.lista li a{
+    text-decoration: none;
+}
+.contenido {
+    float: left; 
+    width: 75%;
+    height: 100%;
+}
+.resultado {
+    float: left; 
+    width: 24%;
+    border: 2.5px solid rgba(12, 66, 183, 0.683);
+    background-color: rgba(108, 112, 190, 0.683);
+    min-height: 300px;
+}
+.mensaje {
+    clear: both;
+    margin-top: 10px;
+    height: 40px;
+    background-color: rgba(215, 135, 135, 0.683);
+    border: 2px solid rgba(197, 0, 0, 0.683);
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    width: 900px;
+    height: 50px;
+    margin: 0 auto;
+}
+.separador {
+    color:gray;
+}
+.border{
+    border-style: groove;
+}
