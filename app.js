@@ -7,6 +7,11 @@ function pregunta2(text) {
     document.getElementById('menu').style.setProperty('border', '2px solid var(--gray-border)')
     document.getElementById('mensaje').style.setProperty('border', '2px solid var(--gray-border)')
     document.getElementById('mensaje').style.setProperty('background-color', 'var(--gray-contenido)');
+    const inputs = document.getElementsByTagName('li');
+    for (var i = 0; i < inputs.length; i++) { 
+        inputs[i].style.setProperty('background-color', 'var(--gray-contenido)');
+        inputs[i].style.setProperty('border', '2px solid var(--gray-border)');
+    }
     setTitulo(text)
 }
 // colocamos el titulo
