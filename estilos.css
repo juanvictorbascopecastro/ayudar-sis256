@@ -11,8 +11,9 @@
 .titulo {
     font-weight: bold;
     text-align: center;
-    width: 900px;
-    height: 30px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #FFFFFF;
     background-color: rgba(215, 135, 135, 0.683);
     border: 2px solid rgba(197, 0, 0, 0.683);

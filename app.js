@@ -6,6 +6,9 @@ function pagina() {
     })
     .catch(error => console.log(error));
 }
+function setTitulo(text) {
+    document.getElementById('titulo').innerHTML = text
+}
 function pagina2() {
     var ajax=new XMLHttpRequest();
     ajax.onreadystatechange=function(){
